@@ -27,12 +27,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Console.RestfulApi.Service.InterfaceEx;
-using Console.RestfulApi.Service.Models;
 using System.ServiceModel;
 using System.ServiceModel.Activation;
+using RestfulApi.Common.IServiceContract;
+using RestfulApi.Common.Models;
+
 namespace Console.RestfulApi.Service.ServiceEx
 {
+    /// <summary>
+    /// 定义服务
+    /// </summary>
     [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single,ConcurrencyMode = ConcurrencyMode.Single,IncludeExceptionDetailInFaults =true)]
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
     public class ShopingQueryService : IShopingInfoQuery

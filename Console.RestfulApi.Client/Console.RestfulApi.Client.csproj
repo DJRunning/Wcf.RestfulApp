@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{60164DD0-71DD-4A9B-B90C-847BA3B8F02B}</ProjectGuid>
+    <ProjectGuid>{BCC57F38-A5BD-4A11-A646-BCDF4BFF3E57}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Console.RestfulApi.Service</RootNamespace>
-    <AssemblyName>Console.RestfulApi.Service</AssemblyName>
+    <RootNamespace>Console.RestfulApi.Client</RootNamespace>
+    <AssemblyName>Console.RestfulApi.Client</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -34,9 +34,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
-    <Reference Include="System.ServiceModel.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,7 +45,6 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ServiceEx\ShopingQueryService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

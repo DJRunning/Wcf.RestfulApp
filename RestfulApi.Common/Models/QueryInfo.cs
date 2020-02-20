@@ -2,7 +2,7 @@
 * ==================================================================
 *	Copyright (C) 2020
 *
-*	描述：Shop
+*	描述：QueryInfo
 *
 *	作者：DJ
 *
@@ -10,13 +10,13 @@
 *
 *	CLR 版本：4.0.30319.42000
 *
-*	创建时间：2020/2/19 17:26:42
+*	创建时间：2020/2/19 17:30:20
 *
 * ==================================================================
 *	
-*	命名空间：Console.RestfulApi.Service.Models
+*	命名空间：RestfulApi.Common.Models
 *
-*	类名：Shop
+*	类名：QueryInfo
 *	
 * ==================================================================
 */
@@ -25,22 +25,18 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
+using System.Runtime.Serialization;
 
-namespace Console.RestfulApi.Service.Models
+namespace RestfulApi.Common.Models
 {
     [DataContract]
-    public class Shop
+    public class QueryInfo
     {
         [DataMember]
         public int Id { get; set; }
         [DataMember]
         public string Name { get; set; }
-        [DataMember]
-        public double Price { get; set; }
-        [DataMember]
-        public string Des { get; set; }
     }
 }

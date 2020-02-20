@@ -1,5 +1,4 @@
-﻿using Console.RestfulApi.Service.InterfaceEx;
-using Console.RestfulApi.Service.ServiceEx;
+﻿using Console.RestfulApi.Service.ServiceEx;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +16,7 @@ namespace Console.RestfulApi.Service
         {
             ShopingQueryService service = new ShopingQueryService();
             Uri address = new Uri("http://127.0.0.1:8081");
-            WebServiceHost _serviceHost = new WebServiceHost(service, address);
+            WebServiceHost _serviceHost = new WebServiceHost(service, address);//宿主，用来承载服务
             _serviceHost.Opened += Host_Opened;
             _serviceHost.Closed += Host_Closed;
             _serviceHost.Open();
